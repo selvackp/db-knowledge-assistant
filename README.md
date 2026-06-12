@@ -37,6 +37,26 @@ source myenv/bin/activate
 pip install -r requirements.txt
 ```
 
+# Vector Index Creation
+
+Create the vector index once.
+
+```sql
+FT.CREATE docs_idx ON HASH PREFIX 1 "doc:" SCHEMA document TEXT chunk TEXT embedding VECTOR HNSW 6 TYPE FLOAT32 DIM 384 DISTANCE_METRIC COSINE
+```
+
+Verify:
+
+```sql
+FT._LIST
+```
+
+Expected:
+
+```text
+docs_idx
+```
+
 ---
 
 ## Run Application
