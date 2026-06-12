@@ -64,28 +64,8 @@ This enables organizations to start with a low-cost deployment and seamlessly mi
 
 # Architecture
 
-```text
-PDF Documents
-      │
-      ▼
-Text Extraction
-      │
-      ▼
-Chunking
-      │
-      ▼
-Embedding Generation
-      │
-      ▼
-Vector Database
-(Valkey / Percona Valkey / AWS MemoryDB)
-      │
-      ▼
-Semantic Search
-      │
-      ▼
-Streamlit User Interface
-```
+<img width="1024" height="1536" alt="Architecture" src="https://github.com/user-attachments/assets/8533cbed-2c97-47a7-b9cf-11deb3eb16a6" />
+
 
 ---
 
