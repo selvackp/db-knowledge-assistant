@@ -1,0 +1,8 @@
+streamlit
+valkey
+sentence-transformers
+numpy
+pypdf
+torch
+torchvision
+python-dotenv

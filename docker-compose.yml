@@ -1,0 +1,15 @@
+services:
+
+  db-assistant:
+
+    build: .
+
+    container_name: db-assistant
+
+    restart: always
+
+    ports:
+      - "8501:8501"
+
+    env_file:
+      - .env
