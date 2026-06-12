@@ -1,16 +1,3 @@
 # Architecture
 
-PDF Documents
-↓
-Text Extraction
-↓
-Chunking
-↓
-Embedding Generation
-↓
-Vector Database
-(Valkey / Percona Valkey / AWS MemoryDB)
-↓
-Semantic Search
-↓
-Streamlit User Interface
+<img width="1024" height="1536" alt="Architecture" src="https://github.com/user-attachments/assets/9a50297f-23bd-47ae-af18-a7e0dd9df7b0" />
