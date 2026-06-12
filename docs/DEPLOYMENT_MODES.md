@@ -286,16 +286,7 @@ Only environment variables need to be updated.
 Create the vector index once.
 
 ```sql
-FT.CREATE docs_idx
-ON HASH
-PREFIX 1 "doc:"
-SCHEMA
-document TEXT
-chunk TEXT
-embedding VECTOR HNSW 6
-TYPE FLOAT32
-DIM 384
-DISTANCE_METRIC COSINE
+FT.CREATE docs_idx ON HASH PREFIX 1 "doc:" SCHEMA document TEXT chunk TEXT embedding VECTOR HNSW 6 TYPE FLOAT32 DIM 384 DISTANCE_METRIC COSINE
 ```
 
 Verify:
